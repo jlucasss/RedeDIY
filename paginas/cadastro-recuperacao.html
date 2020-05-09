@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="css/style-geral.css" />
+
+<link rel="stylesheet" type="text/css" href="css/cadastro-recuperacao.css" />
+
+<body>
+
+		<header>
+				<center>
+						<h1>Cadastro</h1>
+				</center>
+		</header>
+		
+		<main>
+				<section>
+						<article>
+								
+								<form>
+										
+										<table>
+								
+												<!-- Informacoes basicas -->			
+												
+												<tr>
+														<td>
+																<h2>Informações básicas:</h2>
+														</td>
+												</tr>
+												
+												<tr>
+														<td colspan="2">
+																<input type="text" name="nome" placeholder="Nome"></input>
+														</td>
+												</tr>
+												
+												<tr>
+														<td colspan="2">
+																<input type="date" name="dataNascimento" placeholder="Data de Nascimento"></input>
+														</td>
+												</tr>
+																				
+												<tr>		
+														<td colspan="2">		
+																<select name="sexo">
+												
+																		<option value="feminino">Feminino</option>
+																		<option value="masculino">Masculino</option>
+																		<option value="praQue">X</option>
+												
+																</select>
+														</td>
+												</tr>	
+										
+												<!-- Dados de login -->			
+												
+												<tr>
+														<td>
+																<h2>Dados login:</h2>
+														</td>
+												</tr>
+										
+												<tr>
+														<td colspan="2">
+																<input type="text" name="nomeUsuario" placeholder="Nome de Usu&aacute;rio"></input>
+														</td>
+												</tr>
+												
+												<tr>
+														<td colspan="2">
+																<input type="password" name="senha" placeholder="Senha"></input>
+														</td>
+												</tr>
+										
+												<!-- Meios de envio de codigo -->			
+												
+												<tr>
+														<td>
+																<h2>Meios de envio de código:</h2>
+														</td>
+												</tr>
+												
+												<tr>
+														<td colspan="2">
+																<input type="email" name="email" placeholder="Email"></input>
+														</td>
+													</tr>
+												
+												<tr>
+														<td colspan="2">
+																<input type="tel" name="numeroCelular" placeholder="N&uacute;mero de Celular"></input>
+														</td>
+												</tr>
+												
+												<tr>
+														<td>
+																<input type="button" name="enviarCodigo" value="Enviar código"></input>
+														</td>
+												</tr>
+										
+												<!-- Confirmar codigo de validacao -->			
+												
+												<tr>
+														<td>
+																<h2>Confirmar:</h2>
+														</td>
+												</tr>
+												
+												<tr>								
+														
+														<td>
+																<input type="text" name="codigoResgate" placeholder="Código de resgate"></input>
+														</td>
+														
+														<td>
+																<input type="button" name="confirmaCodigo" value="Confirmar código"></input>
+														</td>
+												
+												</tr>
+												
+												<!-- Botao Concluir -->						
+										
+													<tr>
+															<td colspan="2">
+																	<input type="submit" value="Catcluir"></input> 
+															</td>
+													</tr>
+													
+											</table>
+											
+								</form>
+						
+						</article>
+				</section>
+		</main>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="css/style-geral.css" />
+
+<link rel="stylesheet" type="text/css" href="css/conta.css" />
+
+<body>
+
+		<!-- Cabeçalho -->
+		<header>
+		
+				<center>
+						<h1>Conta</h1>
+				</center>
+				
+		</header>
+		
+		<main>
+		
+				<!-- Descrição -->
+				<section>
+				
+						<article class="descricaoArticle">
+								<div class="editarImgsDiv">
+										<img src="css/Icons/foto.png" class="fotoImg" />
+								</div>
+								
+								<div class="deecricaoDiv">
+										<h2>Título</h2>
+										<h3>Descrição...</h3>
+								</div>
+						</article>
+						
+						<!-- Ir para o chat -->
+						
+						<article>
+						
+								<button type="button" onclick="window.location.href = 'chat.html'">Chat</button>
+						
+						</article>
+						
+						<!-- Listar e pesquisar Amigos -->
+						
+						<article class="listaHArticle">
+						
+								<img src="css/Icons/pesquisar.png" class="pesquisarImg" />
+								
+								<form>
+										<input type="text" name="pesquisar" placeholder="Amigos"></input>
+								</form>
+						
+								<iframe src="lista-horizontal.html" class="listaHIframe"></iframe>
+						
+						</article>
+						
+						<!-- Minhas postagens -->
+					
+						<article>
+						
+								<h2 class="publicacoesH2">
+										Minhas publicações
+										<a href="#nova" class="novaA">Nova</a>
+								</h2>
+						
+								<iframe src="tabela-central.html" class="tabelaIframe"></iframe>	
+						</article>
+				
+				</section>
+		
+		</main>
+		
+		<div class="novaDiv" id="nova">
+				<div></div>
+				<a href="#fechar" class="fecharA">X</a>
+				<iframe src="nova-publicacao.html" class="novaIframe"></iframe>
+		</div>
+	
+</body>
+
+</html>

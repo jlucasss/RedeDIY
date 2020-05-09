@@ -1,0 +1,150 @@
+
+/* mensagens */
+
+.mensagensDiv {
+
+		width: 100%;
+	
+		position: fixed;
+		top: 0px;
+		left: 0%;
+		right: 0%;
+		bottom: 10%;
+		
+		background-color: red;
+	
+}
+
+ol {
+		
+		width: 100%;
+		height: 100%;
+	
+		font-size: 50px;
+		
+		color: white;
+		background-color: black;
+		
+		overflow: auto;
+		
+		padding-left: 10%;
+
+}
+
+ol > li {
+		
+		background-color: #1a1a1a;
+
+}
+
+.primeiraLinhaNome {
+
+		background-color: #4d4d4d;
+
+}
+
+/* enviar mensagem */
+
+.enviarDiv {
+	
+		width: 90%;
+		height: 10%;
+	
+		position: fixed;
+		top: 90%;
+		bottom: 0%;
+		left: 0%;
+		right: 0%;
+
+}
+
+form {
+		
+		width: 100%;
+		height: 100%;
+
+}
+
+#listaH {
+
+		width: 100%;
+	
+}
+
+ul#listaH li {
+
+		display: inline;	
+		
+		list-style-type: none;
+
+}
+/*
+.campoLi {
+
+		width: 50%;
+	
+}
+
+.imagemLi {
+
+		width: 30%;
+
+}*/
+
+.campoInput {
+
+		float: left;
+		
+		width: 89%;
+		height: 130px;
+
+}
+
+form > div {
+
+		width: 10%;
+		height: 100%;
+		
+		padding: 0;
+		
+		float: right;
+
+}
+		
+.enviarButton {
+		
+		width: 100%;
+		height: 100%;
+		/*height: 130px;*/
+		/*
+		background-image: url('Icons/enviar.gif'); 
+		background-repeat: no-repeat;*/
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

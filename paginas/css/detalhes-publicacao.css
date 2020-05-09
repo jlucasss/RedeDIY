@@ -1,0 +1,226 @@
+
+/* imagens */
+
+.conteudoImg {
+
+		width: 100%;
+
+}
+
+.fotoImg, .curtirImg, 
+	.descurtirImg, .configuracaoImg {
+
+		width: 25%;
+	
+}
+
+.comentariosImg {
+
+		width: 100%;
+		height: 100%;
+		
+}
+
+.fecharComentariosA > div > img {
+
+		width: 100%;
+		
+		position: relative;
+		top: 50%;
+		
+		-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+
+}
+
+
+/* Barra de cima */
+
+nav {
+
+		width: 100%;
+		height: 10%;
+		
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;		
+		
+		background-color: black;
+	
+}
+
+.cimaTable {
+
+		width: 100%;
+		height: 10%;
+	
+}
+
+.cimaTable td {
+
+		color: white;
+		
+		width: 25%;
+		height: 10%;
+		
+		text-align: center;
+
+}
+
+/* conteudo */
+
+main {
+
+		position: absolute;
+		top: 10%;
+		bottom: 10%;
+		left: 0px;
+		right: 0px;
+
+}
+
+.conteudoImagemArticle {
+	
+		width: 100%;
+		height: 50%;
+
+		margin-top: 1%;
+		
+}
+
+.imagemComentariosArticle {
+
+		position: fixed;
+		top: 50%;
+		left: -90px;
+		
+		width: 25%;
+		height: 10%;
+		
+		-webkit-transform: rotate(90deg);
+		-transform: rotate(90deg);
+		
+}
+
+.descricaoArticle {
+
+		position: absolute;
+		top: 70%;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+
+}
+
+.descricaoArticle > div {
+
+		width: 100%;
+		
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		
+		background-color: black;
+		
+		opacity: 0.1;
+
+}
+
+/* Barra de baixo */
+
+footer {
+
+		width: 100%;
+		height: 10%;
+		
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		
+		background-color: black;
+	
+}
+
+.baixoTable {
+	
+		width: 100%;
+		height: 10%;
+	
+}
+
+.baixoTable td {
+		
+		width: 33.3%;
+		height: 10%;
+		
+		text-align: center;
+
+}
+
+/* iframe invisivel */
+	
+.comentariosArticle {
+	
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 10%;
+
+		opacity: 0;
+		pointer-events: none;
+
+}
+
+.comentariosArticle > iframe {
+
+		width: 100%;
+		height: 100%;
+	
+}
+
+/* reacoes */
+
+.comentariosArticle:target {
+
+		opacity: 1;
+		pointer-events: auto;
+
+}
+
+.fecharComentariosA > div {
+
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		left: 90%;
+		right: 0px;
+		
+		background-color: silver;
+		
+		opacity: 0.5;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

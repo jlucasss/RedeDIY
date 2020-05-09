@@ -1,0 +1,113 @@
+* {
+    padding : 0;
+    margin : 0;
+}
+
+*, *:before, *:after {
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+
+}
+
+body {
+	
+		width: 100%;
+		height: 100%;
+		
+    background : white;
+    color : #2DFF00;
+}
+
+a {
+
+		color: #2DFF00;
+
+}
+
+h1 {
+	
+		font-size: 80px;
+
+}
+
+h2, 
+	input[type=text],
+	textarea {
+
+		font-size: 60px;
+
+}
+
+h3 {
+
+		font-size: 40px;
+
+}
+
+h4 {
+
+		font-size: 30px;
+
+}
+
+button, 
+	input, 
+	textarea,
+	select {
+
+		width: 100%;
+		font-size: 50px;
+		
+		padding-top: 1%;
+		padding-bottom: 1%;
+		
+		background-color: black;
+		
+		color: #2DFF00;
+		
+}
+
+input[type="date"]:before {
+	
+		content: attr(placeholder) !important;
+		color: #aaa; 
+		margin-right: 0.5em;
+		
+} 
+input[type="date"]:focus:before, 
+		input[type="date"]:valid:before { 
+			
+		content: "";
+		
+}
+
+header {
+
+		width: 100%;
+	
+		padding-top: 2%;
+		padding-bottom: 2%;
+	
+		background-color: black;
+		border-bottom-style: ridge;
+		border-bottom-color: orange;
+	
+		border-bottom-right-radius: 50%;
+		border-bottom-left-radius: 50%;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

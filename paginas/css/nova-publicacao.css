@@ -1,0 +1,61 @@
+
+form {
+
+			position: absolute;
+			bottom: 1%;
+			left: 1%;
+			right: 1%;
+
+}
+
+input {
+
+			width: 100%;
+
+}
+
+input[type=submit] {
+
+			font-size: 80px;
+
+}
+
+.localDiv {
+	
+		position: absolute;
+		top: 5%;
+		left: 0px;
+		right: 0px;
+		bottom: 31%;
+		
+		background-color: silver;
+
+}
+
+.novoImg {
+
+		width: 100%;
+		height: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
