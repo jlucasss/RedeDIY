@@ -1,54 +1,56 @@
 * {
-    padding : 0;
-    margin : 0;
+
+	padding : 0;
+	margin : 0;
+	
+	font-family: "Lucida Console", Monaco, sans-serif;
+
 }
 
 *, *:before, *:after {
 
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 
 }
 
 body {
 	
-		width: 100%;
-		height: 100%;
+	width: 100%;
+	height: 100%;
 		
-    background : white;
-    color : #2DFF00;
+	background : white;
+	color : #2DFF00;
 }
 
 a {
 
-		color: #2DFF00;
+	color: #2DFF00;
 
 }
 
 h1 {
 	
-		font-size: 80px;
+	font-size: 3.5em;
 
 }
 
-h2, 
-	input[type=text],
-	textarea {
+h2 { 
 
-		font-size: 60px;
+	font-size: 3em;/*3.75em;*/
 
 }
 
 h3 {
 
-		font-size: 40px;
+	font-size: 2em;
 
 }
 
 h4 {
 
-		font-size: 30px;
+	font-size: 1.5em;
 
 }
 
@@ -57,57 +59,87 @@ button,
 	textarea,
 	select {
 
-		width: 100%;
-		font-size: 50px;
-		
-		padding-top: 1%;
-		padding-bottom: 1%;
-		
-		background-color: black;
-		
-		color: #2DFF00;
+	width: 100%;
+	font-size: 1.5em;
+
+	padding-top: 1%;
+	padding-bottom: 1%;
+
+	background-color: black;
+
+	color: #2DFF00;
 		
 }
 
 input[type="date"]:before {
 	
-		content: attr(placeholder) !important;
-		color: #aaa; 
-		margin-right: 0.5em;
+	content: attr(placeholder) !important;
+	color: #aaa; 
+	margin-right: 0.5em;
 		
 } 
 input[type="date"]:focus:before, 
-		input[type="date"]:valid:before { 
+	input[type="date"]:valid:before { 
 			
-		content: "";
+	content: "";
 		
 }
 
 header {
 
-		width: 100%;
-	
-		padding-top: 2%;
-		padding-bottom: 2%;
-	
-		background-color: black;
-		border-bottom-style: ridge;
-		border-bottom-color: orange;
-	
-		border-bottom-right-radius: 50%;
-		border-bottom-left-radius: 50%;
-	
+	width: 100%;
+
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+	background-color: black;
+	border-bottom-style: ridge;
+	border-bottom-color: orange;
+
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+
 }
 
+/* categorias */
 
+ul#categoriasUl li {
 
+	display: inline-block;
 
+	font-size: 30px;
 
+}
 
+#categoriasUl > li:hover {
 
+	background-color: rgb(70, 0, 130);
 
+}
 
+#categoriasUl > li {
 
+	border-radius: 25px;
+	
+	padding: 5px 5px 5px 5px;
+	
+	border-style: solid;
+	border-color: white;
+	
+	list-style-type: none;
+	
+	text-align: center;
+	
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+		
+}
 
+#categoriasUl > li > a {
 
+	text-decoration: none;
+
+}
 

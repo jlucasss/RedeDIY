@@ -1,28 +1,34 @@
 
-h2 {
+blockquote {
 
-		margin-left: 1%;
-		
-		color: darkred;
+	color: rgb(20, 20, 20);
+
+}
+
+h3 {
+
+	margin-left: 1%;
+
+	color: darkred;
 
 }
 
 span {
 
-		color: darkblue;
+	color: darkblue;
 
 }
 
 video {
 
-		width: 100%;
-		height: 600px;
+	width: 100%;
+	height: 600px;
 	
-		position: relative;
-		
-		bottom: 1%;
-		left: 0px;
-		right: 0px;
+	position: relative;
+
+	bottom: 1%;
+	left: 0px;
+	right: 0px;
 
 }
 

@@ -1,33 +1,34 @@
 
+h2 {
+
+	text-align: center;
+
+}
+
 .linkDiv {
 		
-		position: absolute;
-		top: 34%;
-		left: 1%;
-		right: 1%;
-		bottom: 1%;
+	position: absolute;
+	top: 34%;
+	left: 1%;
+	right: 1%;
+	bottom: 1%;
 
 }
 
 iframe {
-	
-		width: 100%;
-		height: 100%;
-		
-		border-style: none;
-	
+
+	width: 100%;
+	height: 100%;
+
+	border-style: none;
+
 }
 
+input, button, .linkDiv {
 
+	width: 50%;
 
+	margin: 1% 0 1% 25%;
 
-
-
-
-
-
-
-
-
-
+}
 

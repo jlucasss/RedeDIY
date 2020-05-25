@@ -4,7 +4,7 @@
 
 <meta charset="UTF-8" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta�name="viewport"�content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" type="text/css" href="css/style-geral.css" />
 
@@ -12,65 +12,73 @@
 
 <body>
 
-	<!-- pesquisar -->
-		
-		<nav>
-		
-				<div>	
-						<iframe src="pesquisar.html" class="pesquisarIframe"></iframe>			
-				</div>
-		
-		</nav>
-		
-		<!-- principal -->
+<!-- pesquisar -->
 
-		<main>
-		
-				<section>			
-						
-						<article>				
-								<a href="#detalhe" name="id1">
-										<div class="mascaraDiv">
-												<iframe src="publicacao.html" class="publicacaoIframe"></iframe>
-										</div>
-								</a>
-						</article>
-					
-						<article>
-								<a href="#detalhe" name="id2">
-										<div class="mascaraDiv">
-												<iframe src="publicacao.html" class="publicacaoIframe"></iframe>
-										</div>										
-								</a>
-						</article>
-						
-						<article>
-								<a href="#detalhe" name="id3">	
-										<div class="mascaraDiv">
-												<iframe src="publicacao.html" class="publicacaoIframe"></iframe>
-										</div>										
-								</a>
-						</article>
-							
-						<article>
-								<a href="#detalhe" name="id4">
-										<div class="mascaraDiv">
-												<iframe src="publicacao.html" class="publicacaoIframe"></iframe>
-										</div>										
-								</a>
-						</article>
-					
-				</section>
+	<nav>
 
-		</main>
-	
-		<!-- iframe nova publicação -->
-		
-		<div id="detalhe" class="detalhesDiv">
-				<div></div>
-				<a href="#fechar" class="fecharA">X</a>
-				<iframe src="detalhe-publicacao.html" class="geralIframe"></iframe>
+		<input type="checkbox" id="pesquisarCheckbox" />
+		<div>
+			<iframe src="pesquisar.html" class="pesquisarIframe"></iframe>			
 		</div>
+
+
+		<label for="pesquisarCheckbox">
+			<div>
+				<img src="css/icons/pesquisar.png" alt="pesquisar imagem" />
+			</div>
+		</label>
+
+	</nav>
+		
+<!-- principal -->
+
+	<main>
+
+		<section>			
+
+			<article>				
+				<a href="#detalhe" name="id1">
+					<div class="mascaraDiv">
+						<iframe src="publicacao.html" class="publicacaoIframe"></iframe>
+					</div>
+				</a>
+			</article>
+
+			<article>
+				<a href="#detalhe" name="id2">
+					<div class="mascaraDiv">
+						<iframe src="publicacao.html" class="publicacaoIframe"></iframe>
+					</div>										
+				</a>
+			</article>
+
+			<article>
+				<a href="#detalhe" name="id3">	
+					<div class="mascaraDiv">
+						<iframe src="publicacao.html" class="publicacaoIframe"></iframe>
+					</div>										
+				</a>
+			</article>
+
+			<article>
+				<a href="#detalhe" name="id4">
+					<div class="mascaraDiv">
+						<iframe src="publicacao.html" class="publicacaoIframe"></iframe>
+					</div>										
+				</a>
+			</article>
+					
+		</section>
+
+	</main>
+	
+<!-- iframe nova publicação -->
+		
+	<div id="detalhe" class="detalhesDiv">
+		<div></div>
+		<a href="#fechar" class="fecharA">X</a>
+		<iframe src="detalhe-publicacao.html" class="geralIframe"></iframe>
+	</div>
 					
 </body>
 

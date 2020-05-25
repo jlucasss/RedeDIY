@@ -1,85 +1,71 @@
 
 /* imagens */
 
-
-.fotoImg {
-
-		width: 200px;
-
-}
-
+.fotoImg, 
 .likeImg, .dislikeImg {
 
-		width: 100px;
+	width: 100%;
+
+	max-width: 80px;
 
 }
 
 /* organizacao */
 
-table {
+ul {
 	
-		background-color: black;
+	background-color: black;
 
-		width: 100%;	
-		height: 250px;
-		
-		position: fixed;
-		top: 0px;
-		bottom: 0px;
-		left: 0px;
-		right: 0px;	
+	width: 100%;	
 
-}
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 
-tr td {
-
-	/*	border-style: solid;
-		
-		border-collapse: collapse;
-		
-		border-color: black;*/
-		
-		text-align: center;
+	list-style-type: none;
 
 }
 
-.fotoTd {
+/* primeira ul */
 
-		width: 20%;
+.primeiraUl {
 
-}
-
-
-.textoTd {
-
-		width: 80%;
-
-}
-
-.ultimasTds {
 	
-		width: 20%;
-	
+
+}
+
+.fotoLi {
+
+	width: 10%;
+
+}
+
+.textoLi {
+
+	width: 88%;
+
+	margin-top: 1%;
+
+}
+
+
+/* segunda ul */
+
+.segundaUl > li {
+
+	width: 19%;
+
 }
 
 button {
 
-		width: 25%;
-		
-		font-size: 25px;
-		
-		border-style: none;
-		
-		color: green;
+	width: 25%;
+
+	font-size: 25px;
+
+	border-style: none;
+
+	color: green;
 
 }
-
-
-
-
-
-
-
-
-
 

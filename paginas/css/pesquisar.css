@@ -1,79 +1,76 @@
 
-select {
-		
-		margin-top: 1%;
-		margin-bottom: 1%;
+select, .categoriasUl {
+
+	margin-top: 1%;
+	margin-bottom: 1%;
 
 }
 
 select[name=ordenar], 
-	select[name=categorias], 
+	select[name=categorizar], 
 	select[name=filtrar] {
 
-		width: 33.3%;
-		float: left;
+	width: 33.3%;
+	float: left;
 	
+}
+
+/* categorias */
+
+.tagsDiv {
+
+	background-color: black;
+
+}
+
+li > input[type=checkbox] {
+
+	position: fixed;
+	top: 50%;
+	left: -9999px;
+	opacity: 0;
+
+}
+
+li > input[type=checkbox]:checked + label {
+
+	color: red;
+
 }
 
 /* campo de pesquisa e imagem */
 
 input[name=pesquisar] {
 
-		width: 90%;
-		
-		padding-top: 2%;
-		padding-bottom: 2%;
-		padding-left: 10%;
-		
-		margin-top: 1%;
-		margin-bottom: 1%;
+	background-image: url('icons/pesquisar.png');
+	background-size: 5%;
+	background-repeat: no-repeat;
+	background-position: 1% 10%;
+
+	width: 100%;
+	max-height: 50px;	
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 10%;
+
+	margin-top: 1%;
+	margin-bottom: 1%;
 		
 }
 
 .pesquisarImg {
 
-		width: 10%;
-	
-		padding-top: 1%;
-		
-		position: absolute;
-		left: 1%;
-		
-		opacity: 50%;
-		
-		margin-top: 1%;
-		margin-bottom: 1%;
+	width: 10%;
+
+	padding-top: 1%;
+
+	position: absolute;
+	left: 1%;
+
+	opacity: 50%;
+
+	margin-top: 1%;
+	margin-bottom: 1%;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

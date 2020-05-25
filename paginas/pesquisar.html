@@ -2,9 +2,9 @@
 
 <html>
 
-<meta charset="UTF-8" />
+<meta charset="UTF-8"></meta>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta�name="viewport"�content="width=device-width, initial-scale=1.0"></meta>
 
 <link rel="stylesheet" type="text/css" href="css/style-geral.css" />
 
@@ -12,33 +12,55 @@
 
 <body>
 
-		<img src="css/Icons/pesquisar.png" class="pesquisarImg" />
-								
-		<form>
-				<input type="text" name="pesquisar" placeholder="Pesquisar..."></input>
-		</form>
+	<form>
+		<input type="text" name="pesquisar" placeholder="Pesquisar..."></input>
 		
 		<select name="ordenar">
-  		 <option value="novos">Mais novos</option>
- 		   <option value="antigos">Mais antigos</option>
-				<option value="aleatorios	">Aleatórios</option>
+  			<option value="novos">Mais novos</option>
+ 			<option value="antigos">Mais antigos</option>
+			<option value="aleatorios">Aleatórios</option>
 		</select>
-		
+
 		<select name="filtrar">
-				<option value="novos">Sem filtro</option>
-  		 <option value="maiscomentados">Mais comentados</option>
- 		   <option value="menosComentados">Menos comentados</option>
-				<option value="maisCurtidos">Mais curtidos</option>
-				<option value="menosCurtidos">Menos curtidos</option>
+			<option value="novos">Sem filtro</option>
+  			<option value="maiscomentados">Mais comentados</option>
+ 			<option value="menosComentados">Menos comentados</option>
+			<option value="maisCurtidos">Mais curtidos</option>
+			<option value="menosCurtidos">Menos curtidos</option>
 		</select>
 		
-		<select name="categorias" multiple>
-				<option value="impressora3d">Impressora 3D</option>
-				<option value="facil">Nível fácil</option>
-				<option value="medio">Nível médio</option>
-				<option value="dificil">Nível difícil</option>
+		<select name="categorizar" value="">
+			<option value="todasCategorias">Todas as categorias</option>
+  			<option value="algumasCategorias">Algumas</option>
+			<option value="menosAlgumasCategorias">Todas menos algumas</option>
 		</select>
 		
+
+		<div class="tagsDiv">
+			<ul id="categoriasUl">					
+				<li>
+					<input type="checkbox" id="impressora3d" name="impressora3d" value="impressora3d">
+					<label for="impressora3d">Impressora 3D</label>
+				</li>
+								
+				<li>
+					<input type="checkbox" name="facil" id="facil">
+					<label for="facil">Nível fácil</label>
+				</li>
+
+				<li>
+					<input type="checkbox" name="medio" id="medio">
+					<label for="medio">Nível médio</label>
+				</li>
+
+				<li>
+					<input type="checkbox" name="dificil" id="dificil">
+					<label for="dificil">Nível difícil</label>
+				</li>
+			</ul>
+		</div>
+	
+	</form>
 
 </body>
 </html>

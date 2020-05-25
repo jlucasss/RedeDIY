@@ -2,9 +2,9 @@
 
 <html>
 
-<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
-<metaÂ name="viewport"Â content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" type="text/css" href="css/style-geral.css" />
 
@@ -12,88 +12,124 @@
 
 <body>
 
-		<!-- Barra de cima -->
+	<!-- Barra de cima -->
 
-		<nav>
-		
-				<table class="cimaTable">
-				
-						<tr>
-						
-								<td><img src="css/Icons/foto.png" class="fotoImg" /></td>
-								
-								<td><img src="css/Icons/descurtir.png" class="descurtirImg" /></td>
-								
-								<td><img src="css/Icons/curtir.png" class="curtirImg" /></td>
-						
-						</tr>
-				
-				</table>
+	<nav>
 
-		</nav>	
+		<ul class="cimaUl">
+
+			<li>
+				<div>
+					<a href="conta.html" target="_blank">
+						<img src="css/icons/foto.png" class="fotoImg" />
+					</a>
+				</div>
+			</li>
+
+			<li><div><img src="css/icons/descurtir.png" class="descurtirImg" /></div></li>
+
+			<li><div><img src="css/icons/curtir.png" class="curtirImg" /></div></li>
+
+			<li>
+				<label for="configuracoesCheckbox">
+					<img src="css/icons/engrenagem.png" class="configuracoesImg" />
+				</label>
+				<input type="checkbox" id="configuracoesCheckbox" name="configuracoesCheck" />
+				<div id="opcoesDiv" for="configuracoesCheckbox">
+					<ul>
+						<li>
+							<a href="detalhe-publicacao.html" target="_blank">
+								<img src="css/icons/nova-guia.png" alt="nova guia" />
+							</a>
+						</li>
+
+						<li>
+							<a href="#favoritar">
+								<img src="css/icons/estrela.png" alt="favoritar" />
+							</a>
+						</li>
+
+						<li>
+							<a href="#baixar">
+								<img src="css/icons/download.png" alt="download" />
+							</a>
+						</li>
+
+						<li>
+							<a href="#imprimir">
+								<img src="css/icons/impressora.png" alt="imprimir" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+		</ul>
+
+	</nav>	
 		
-		<!-- Principal -->
-		
-		<main>
-				<section>
+	<!-- Principal -->
+
+	<main>
+		<section>
 				
-						<article class="conteudoImagemArticle">
-								<a href="#selecionado">
-										<img src="css/imagensTest/impressora3d.png" class="conteudoImg"></img>			
-								</a>
-						</article>
-						
-						<article class="descricaoArticle">
-								<div></div>
-								<h3>
-										DescriÃ§Ã£o...
-										<br/>
-										Fontes:
-										<a href="https://youtu.be/govCOa52SsA">
-												https://youtu.be/govCOa52SsA
-										</a>
-								</h3>
-						</article>
-						
-						<article class="imagemComentariosArticle">	
-								<a href="#comentarios">
-										<img src="css/Icons/comentario(s).png" class="comentariosImg" />
-								</a>			
-						</article>
-						
-						<article class="comentariosArticle" id="comentarios">					
-								<iframe src="comentarios.html"></iframe>
-								<a href="#fecharComentarios" class="fecharComentariosA">
-										<div>
-												<img src="css/Icons/seta.png" />
-										</div>
-								</a>
-						</article>
-						
-				</section>
-		</main>
-		
-		<!-- barra de baixo -->
-		
-		<footer>
-		
-				<table class="baixoTable">
+			<article>
+
+				<div class="fotoImgDiv">
+					<img src="css/imagensTest/impressora3d.png" class="conteudoImg" alt="Foto principal"></img>
+					<h2>Uma impressora 3D "reciclada"</h2>
+				</div>
+
+				<div class="descricaoDiv">
+					<p>Um exemplo de como a descrição ficaria é esse.</p>
+					<br/>
+					Logo abaixo estarão as fontes de todos os projetos que serão apresentados pelos próprios usuários,
+					 apresentando tudo corretamente.
+				</div>
 				
-						<tr>
+				<div class="fontesDiv">	
+					<span>Fonte(s):</span>
+					<br/>
+					<p>Texto feito pelo autor da conta.</p>
+
+					<a href="https://youtu.be/govCOa52SsA" target="blank">
+						https://youtu.be/govCOa52SsA
+					</a>
+				</div>
 						
-								<td>
-										<h2>TÃ­tulo</h2>
-								</td>
-								
-								<td>
-										<img src="css/Icons/engrenagem.png" class="configuracaoImg" />
-								</td>
-												
-						</tr>
-				
-				</table>
+				<div class="comentariosDiv">
+
+					<div class="carregandoDiv">
+						<img src="css/Icons/comentario(s).png" class="comentariosImg" alt="Carregando comentários" />
+					</div>
+
+					<div class="comentariosIframeDiv">
+						<iframe src="comentarios.html"></iframe>
+					</div>
+
+				</div>
+
+			</article>
+
+		</section>
+	</main>
 		
-		</footer>
+<!-- barra de baixo -->
+		
+	<footer>
+
+		<div class="tagsDiv">
+			<ul id="categoriasUl">					
+				<li>
+					<a href="">Impressora3D</a>
+				</li>								
+				<li>
+					<a href="">Médio</a>
+				</li>							
+			</ul>
+		</div>
+
+	</footer>
 
 </body>
 

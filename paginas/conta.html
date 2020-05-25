@@ -2,9 +2,9 @@
 
 <html>
 
-<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
-<metaÂ name="viewport"Â content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" type="text/css" href="css/style-geral.css" />
 
@@ -12,75 +12,143 @@
 
 <body>
 
-		<!-- CabeÃ§alho -->
-		<header>
-		
-				<center>
-						<h1>Conta</h1>
-				</center>
+<!-- CabeÃ§alho -->
+	<header>
+
+		<center>
+			<h1>Conta</h1>
+		</center>
 				
-		</header>
+	</header>
 		
-		<main>
-		
-				<!-- DescriÃ§Ã£o -->
-				<section>
-				
-						<article class="descricaoArticle">
-								<div class="editarImgsDiv">
-										<img src="css/Icons/foto.png" class="fotoImg" />
-								</div>
-								
-								<div class="deecricaoDiv">
-										<h2>TÃ­tulo</h2>
-										<h3>DescriÃ§Ã£o...</h3>
-								</div>
-						</article>
-						
-						<!-- Ir para o chat -->
-						
-						<article>
-						
-								<button type="button" onclick="window.location.href = 'chat.html'">Chat</button>
-						
-						</article>
-						
-						<!-- Listar e pesquisar Amigos -->
-						
-						<article class="listaHArticle">
-						
-								<img src="css/Icons/pesquisar.png" class="pesquisarImg" />
-								
-								<form>
-										<input type="text" name="pesquisar" placeholder="Amigos"></input>
-								</form>
-						
-								<iframe src="lista-horizontal.html" class="listaHIframe"></iframe>
-						
-						</article>
-						
-						<!-- Minhas postagens -->
-					
-						<article>
-						
-								<h2 class="publicacoesH2">
-										Minhas publicaÃ§Ãµes
-										<a href="#nova" class="novaA">Nova</a>
-								</h2>
-						
-								<iframe src="tabela-central.html" class="tabelaIframe"></iframe>	
-						</article>
-				
-				</section>
-		
-		</main>
-		
-		<div class="novaDiv" id="nova">
-				<div></div>
-				<a href="#fechar" class="fecharA">X</a>
-				<iframe src="nova-publicacao.html" class="novaIframe"></iframe>
-		</div>
+	<nav>
+
+		<ul class="opcoesContaUl">
+
+			<li>
+				<label for="descricaoCheckbox">
+					<img src="css/icons/foto.png" alt="geral da conta" />
+				</label>
+			</li>
+			<li>
+				<label for="amigosCheckbox">
+					<img src="css/icons/amigos.png" alt="amigos" />
+				</label>
+			</li>
+
+			<li>
+				<label for="favoritosCheckbox">
+					<img src="css/icons/estrela.png" alt="favoritados" />
+				</label>
+			</li>
+
+			<li>
+				<label for="publicacoesCheckbox">
+					<img src="css/icons/publicacoes.png" alt="minhas publicacoes" />
+				</label>
+			</li>
+
+		</ul>
+
+	</nav>
+
+<!-- DescriÃ§Ã£o -->
+
+	<main>
+		<section>
+
+			<input type="checkbox" id="descricaoCheckbox" checked />
+
+			<article class="descricaoArticle">
+
+				<div class="editarImgsDiv">
+					<img src="css/icons/foto.png" />
+				</div>
+
+				<div class="descricaoDiv">
+					<h2>Fulano</h2>
+					<h3>Olá, eu sou Fulano. Bem-vindo a minha conta!</h3>
+				</div>
+
+				<div class="configuracoesDiv">
+					<a href="#cadastro">
+						<img src="css/icons/engrenagem.png" alt="editar cadastro" />
+					</a>
+				</div>
+
+			</article>
+
+<!-- Ir para o chat ou contas amigas -->
+
+			<input type="checkbox" id="amigosCheckbox" />
+
+			<article class="listaHArticle">
+
+				<img src="css/Icons/pesquisar.png" class="pesquisarImg" />
+
+				<form>
+					<input type="text" name="pesquisar" placeholder="Amigos"></input>
+				</form>
+
+				<h4>
+					<ul class="amigosUl">
+						<li>Siclano<a href="#conversa">Chat</a></li>
+
+						<li>Beltrano<a href="#conversa">Chat</a></li>
+
+						<li>n-ano<a href="#conversa">Chat</a></li>
+					</ul>
+				</h4>
+
+			</article>
+
+<!-- Favoritadas postagens -->
+
+			<input type="checkbox" id="favoritosCheckbox" />
 	
+			<article class="favoritosArticle">
+				<h2 class="publicacoesH2">Publicações favoritadas:</h2>
+
+				<iframe src="tabela-central.html" class="tabelaIframe"></iframe>	
+			</article>
+
+
+<!-- Minhas postagens -->
+
+			<input type="checkbox" id="publicacoesCheckbox" />
+	
+			<article class="publicacoesArticle">
+
+				<h2 class="publicacoesH2">
+					Minhas publicações
+					<a href="#nova" class="novaA">Nova</a>
+				</h2>
+
+				<iframe src="tabela-central.html" class="tabelaIframe"></iframe>	
+			</article>
+
+		</section>
+
+	</main>
+	
+	<div class="cadastroDiv" id="cadastro">
+		<div></div>
+		<a href="#fechar" class="fecharA">X</a>
+		<iframe src="cadastro-recuperacao.html" class="cadastroIframe"></iframe>
+	</div>
+
+	<div class="novaDiv" id="nova">
+		<div></div>
+		<a href="#fechar" class="fecharA">X</a>
+		<iframe src="nova-publicacao.html" class="novaIframe"></iframe>
+	</div>
+	
+	<div class="conversaDiv" id="conversa">
+		<div></div>
+		<a href="#fechar" class="fecharA">X</a>
+		<iframe src="chat.html" class="chatIframe"></iframe>
+	</div>
+
 </body>
 
 </html>

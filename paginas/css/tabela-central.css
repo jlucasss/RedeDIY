@@ -2,32 +2,88 @@
 /* pesquisa */
 
 nav {
-		
-		width: 100%;
-		height: 100%;
-	
-		position: relative;
-		top: 0px;
-		bottom: 90%;
-		left: 0px;
-		right: 0px;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	width: 98%;
+
+	margin-left: 1%;
+	margin-right: 1%;
+
+	z-index: 5;
 
 }
 
-nav > div {
+nav > label > div {
 
-		width: 98%;
-		height: 230px;
-		
-		margin-left: 1%;
-		margin-right: 1%;
+	width: 10%;
+
+	padding: 1%;
+	
+	position: fixed;
+	top: 35%;
+	right: -3%;
+
+	border-radius: 100%;
+
+	background-color: rgb(0, 0, 0, 50%);
+
+}
+
+nav > label > div > img {
+
+	width: 100%;
+
+}
+
+#pesquisarCheckbox {
+
+	position: fixed;
+	top: 50%;
+	left: -9999px;
+	opacity: 0;
+
+}
+
+nav > label {
+
+	position: absolute;
+	top: 0;
+
+}
+
+
+#pesquisarCheckbox:checked ~ label {
+
+	top: 200px;
+
+}
+ 
+#pesquisarCheckbox + div {
+
+	height: 190px;
+
+	opacity: 0;
+	pointer-events: none;
+
+} 
+
+#pesquisarCheckbox:checked + div {
+
+	opacity: 100%;
+	pointer-events: auto;
 
 }
 
 .pesquisarIframe {
 
-		width: 100%;
-		height: 100%;
+	width: 100%;
+	height: 100%;
+	
+	border-style: none;
 
 }
 
@@ -35,144 +91,147 @@ nav > div {
 
 section {
 
-		width: 100%;
-		height: 100%;
+	width: 100%;
+	height: 100%;
 
 }
 
 article {
 		
-		width: 47%;
-		height: 900px;
+	width: 47%;
+	height: 700px;
 		
-		display: inline-block;
+	display: inline-block;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 1%;
+	margin-right: 1%;
 		
-		margin-top: 10px;
-		margin-bottom: 10px;
-		margin-left: 1%;
-		margin-right: 1%;
-		
-		background-color: white;
+	background-color: white;
+
+}
+
+article:hover .publicacaoIframe {
+
+	border-radius: 20px;
+	border-color: rgb(70, 0, 130, 30%);
+	border-width: 5px;
+	border-style: solid;
 
 }
 
 .mascaraDiv {
-		
-		width: 100%;
-		height: 100%;
-			
+	
+	position: relative;
+	width: 100%;
+	height: 100%;
+
 }
 
-.publicacaoIframe {
-	
-			width: 100%;
-			height: 100%;
-			
-			pointer-events: none;
-						
-			border-style: none;
+.mascaraDiv .publicacaoIframe {
+
+	position: absolute;
+	display: block;
+	left: 0;
+	right: 0;
+
+	width: 100%;
+	height: 100%;
+
+	min-width: 300px;
+	/*min-height: 900px;*/
+
+	border-radius: 20px;
+
+	pointer-events: none;
+
+	border-style: none;
 
 }
 
 /* div popup */
 
 .geralIframe {
-	
-		width: 90%;
-		height: 90%;
-		
-		position: absolute;
-		top: 5%;
-		bottom: 5%;
-		left: 5%;
-		right: 5%;
-		
+
+	width: 100%;
+	height: 95%;
+
+	position: absolute;
+	top: 5%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
 }
 
 .detalhesDiv {
 
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		
-		opacity: 0;
-		pointer-events: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	opacity: 0;
+	pointer-events: none;
 		
 }
 
 .detalhesDiv:target {
-	
-		opacity: 1;
-		pointer-events: auto;
-	
+
+	opacity: 1;
+	pointer-events: auto;
+
+	z-index: 6;
+
 }
 
 .detalhesDiv > div {
-	
-		width: 100%;
-		height: 100%;
-	
-		background-color: black;
-		
-		position: absolute;
-		top: 0px;
-		bottom: 0px;
-		left: 0px;
-		right: 0px;
-		
-		opacity: 0.7;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: black;
+
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+
+	opacity: 0.7;
 
 		
 }
 
 .fecharA {
 
-		text-decoration:none;
-		
-		font-size: 50px;
-		color: red;
-		
-		position: relative;
-		
-		float: right;
+	text-decoration:none;
+
+	font-size: 3vw;
+	color: red;
+
+	position: relative;
+
+	float: right;
 
 }
 
-/* resolução de celular */
-@media (max	-width: 900px) {
+/* resolução de celular */ 
+@media (min-width: 1000px) {
 
-		article {
+	article {
+
+		width: 30%;
 		
-				width: 47%;
+	}
+
+	section {
+
+		width: 100%;
 		
-		}
-		
-		.mascaraDiv {
-		
-				width: 47%;
-		
-		}
-		
-		section {
-		
-				width: 100%;
-			
-		}
+	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
