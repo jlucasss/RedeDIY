@@ -172,7 +172,7 @@ article {
 	margin-left: 5%;
 	margin-right: 5%;
 
-	font-size: 2.8vw;
+	font-size: 1.5rem;
 
 	color: rgb(20, 20, 20);
 
@@ -185,7 +185,7 @@ article {
 	margin-top: 5%;
 	margin-bottom: 5%;
 
-	font-size: 2vw;
+	font-size: 1.1rem;
 
 	color: rgb(0, 0, 0);
 
@@ -199,7 +199,6 @@ article {
 
 .fontesDiv > a {
 
-	background-color: rgb(150, 150, 150);
 	color: rgb(255, 0, 0);
 
 }

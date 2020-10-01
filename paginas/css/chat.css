@@ -25,11 +25,28 @@ ol {
 
 	overflow: auto;
 
-	padding-left: 10%;
+	padding-left: 8%;
+
+	list-style: none;
+
+}
+
+ol > li::before {
+
+	content: counter(li);
+	color: rgb(255, 255, 255, 40%);
+	width: 1em;
+	display: inline-block;
+	margin-left: -1.5em;
+	margin-right: 0.5em;
+	text-align: right;
+	direction: rtl;
 
 }
 
 ol > li {
+
+	counter-increment: li;
 
 	background-color: #1a1a1a;
 

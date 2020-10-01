@@ -4,15 +4,6 @@ blockquote {
 	color: rgb(20, 20, 20);
 
 }
-
-h3 {
-
-	margin-left: 1%;
-
-	color: darkred;
-
-}
-
 span {
 
 	color: darkblue;
@@ -21,24 +12,24 @@ span {
 
 video {
 
-	width: 100%;
+	width: 98%;
 	height: 600px;
 	
 	position: relative;
 
 	bottom: 1%;
-	left: 0px;
-	right: 0px;
+	left: 1%;
+	right: 1%;
 
 }
 
+.falaPrimeiraPessoaDiv {
 
+	max-width: 75%;
 
+	margin-left: 12.5%;
 
+	color: darkred;
 
-
-
-
-
-
+}
 

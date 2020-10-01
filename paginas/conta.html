@@ -16,7 +16,7 @@
 	<header>
 
 		<center>
-			<h1>Conta</h1>
+			Conta
 		</center>
 				
 	</header>
@@ -27,24 +27,24 @@
 
 			<li>
 				<label for="descricaoCheckbox">
-					<img src="css/icons/foto.png" alt="geral da conta" />
+					<img src="css/icons/foto.svg" alt="geral da conta" />
 				</label>
 			</li>
 			<li>
 				<label for="amigosCheckbox">
-					<img src="css/icons/amigos.png" alt="amigos" />
+					<img src="css/icons/amigos.svg" alt="amigos" />
 				</label>
 			</li>
 
 			<li>
 				<label for="favoritosCheckbox">
-					<img src="css/icons/estrela.png" alt="favoritados" />
+					<img src="css/icons/estrela.svg" alt="favoritados" />
 				</label>
 			</li>
 
 			<li>
 				<label for="publicacoesCheckbox">
-					<img src="css/icons/publicacoes.png" alt="minhas publicacoes" />
+					<img src="css/icons/publicacoes.svg" alt="minhas publicacoes" />
 				</label>
 			</li>
 
@@ -61,19 +61,44 @@
 
 			<article class="descricaoArticle">
 
-				<div class="editarImgsDiv">
-					<img src="css/icons/foto.png" />
+				<div class="principalDescricaoDiv">
+					<div class="editarImgsDiv">
+						<img src="css/icons/foto.svg" />
+					</div>
+
+					<div class="descricaoDiv">
+						<h2>Fulano</h2>
+						<h3>Olá, eu sou Fulano. Bem-vindo a minha conta!</h3>
+					</div>
+
+					<div class="configuracoesDiv">
+						<a href="#cadastro">
+							<img src="css/icons/engrenagem.svg" alt="editar cadastro" />
+						</a>
+					</div>
 				</div>
 
-				<div class="descricaoDiv">
-					<h2>Fulano</h2>
-					<h3>Olá, eu sou Fulano. Bem-vindo a minha conta!</h3>
+				<div class="dadosDiv">
+					<table class="dadosTable">
+						<tr>
+							<th>Total de visualizações:</th>
+							<td>1BI</td>
+						</tr>
+						<tr>
+							<th>Total de likes:</th>
+							<td>999M</td>
+						</tr>
+						<tr>
+							<th>Publicação mais curtida:</th>
+							<td><a href="detalhe-publicacao.html" target="_blank">
+								Impressora 3D "reciclada"
+							</a></td>
+						<tr>
+					</table>
 				</div>
 
-				<div class="configuracoesDiv">
-					<a href="#cadastro">
-						<img src="css/icons/engrenagem.png" alt="editar cadastro" />
-					</a>
+				<div class="sairDiv">
+					<a href="entrar.html">Sair</a>
 				</div>
 
 			</article>
@@ -84,7 +109,7 @@
 
 			<article class="listaHArticle">
 
-				<img src="css/Icons/pesquisar.png" class="pesquisarImg" />
+				<img src="css/icons/pesquisar.svg" class="pesquisarImg" alt="lupa" />
 
 				<form>
 					<input type="text" name="pesquisar" placeholder="Amigos"></input>
@@ -92,11 +117,29 @@
 
 				<h4>
 					<ul class="amigosUl">
-						<li>Siclano<a href="#conversa">Chat</a></li>
+						<li>
+							<a href="conta.html" target="_blank"><div>
+								<img src="css/icons/foto.svg" alt="foto" />
+							</div></a>
+							<span>Siclano</span>
+							<a href="#conversa" class="conversarA">Chat</a>
+						</li>
 
-						<li>Beltrano<a href="#conversa">Chat</a></li>
+						<li>
+							<a href="conta.html" target="_blank"><div>
+								<img src="css/icons/foto.svg" alt="foto" />
+							</div></a>
+							<span>Beltrano</span>
+							<a href="#conversa" class="conversarA">Chat</a>
+						</li>
 
-						<li>n-ano<a href="#conversa">Chat</a></li>
+						<li>
+							<a href="conta.html" target="_blank"><div>
+								<img src="css/icons/foto.svg" alt="foto" />
+							</div></a>
+							<span>n-ano</span>
+							<a href="#conversa" class="conversarA">Chat</a>
+						</li>
 					</ul>
 				</h4>
 
@@ -107,7 +150,7 @@
 			<input type="checkbox" id="favoritosCheckbox" />
 	
 			<article class="favoritosArticle">
-				<h2 class="publicacoesH2">Publicações favoritadas:</h2>
+				<h4>Publicações favoritadas:</h4>
 
 				<iframe src="tabela-central.html" class="tabelaIframe"></iframe>	
 			</article>
@@ -119,10 +162,10 @@
 	
 			<article class="publicacoesArticle">
 
-				<h2 class="publicacoesH2">
+				<h4>
 					Minhas publicações
 					<a href="#nova" class="novaA">Nova</a>
-				</h2>
+				</h4>
 
 				<iframe src="tabela-central.html" class="tabelaIframe"></iframe>	
 			</article>

@@ -15,6 +15,50 @@
 
 }
 
+html::-webkit-scrollbar {
+
+	width: 1.5vw;
+	height: 2vw;
+
+	background-color: white;
+
+	opacity: 0;
+
+}
+
+html::-webkit-scrollbar:hover {
+
+	background-color: black;
+
+	opacity: 100%;
+
+}
+
+html::-webkit-scrollbar-thumb {
+
+	background-color: green;
+
+	border-radius: 10%;
+
+}
+
+html::-webkit-scrollbar-thumb:hover {
+
+	background-color: rgb(0, 0, 200);
+
+}
+
+html::-webkit-scrollbar-track {
+
+	background-color: transparent;
+
+	border-width: 1px;
+
+	border-radius: 5%;
+	background-color: rgb(20, 20, 20, 50%);
+
+}
+
 body {
 	
 	width: 100%;
@@ -54,13 +98,31 @@ h4 {
 
 }
 
+header > center {
+
+
+
+}
+
+iframe, table, video {
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+iframe:hover, table:hover, video:hover {
+
+	box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 0, 0, 0.19);
+
+}
+
 button, 
 	input, 
 	textarea,
 	select {
 
 	width: 100%;
-	font-size: 1.5em;
+	font-size: 1em;
 
 	padding-top: 1%;
 	padding-bottom: 1%;
@@ -69,6 +131,58 @@ button,
 
 	color: #2DFF00;
 		
+}
+
+textarea, input {
+
+	padding-left: 1%;
+
+}
+
+input, 
+	textarea:valid,
+	select:valid {
+
+	background-image: url('icons/correto.svg');
+	background-repeat: no-repeat;
+	background-position: 97%;
+	background-size: 8%;
+	background-blend-mode: hard-light;
+
+}
+
+input::-webkit-input-placeholder, input::placeholder,
+	textarea:invalid,
+	select:invalid {
+
+	background-image: url('icons/incorreto.svg');
+	background-repeat: no-repeat;
+	background-position: 97%;
+	background-size: 8%;
+	background-blend-mode: hard-light;
+
+}
+
+input[type=submit],
+	input[type=button],
+	button {
+
+	background-image: url('icons/desativado.svg');
+	background-repeat: no-repeat;
+	background-position: 97%;
+	background-size: 10%;
+
+}
+
+input[type=submit]:active,
+	input[type=button]:active,
+	button:active {
+
+	background-image: url('icons/ativado.svg');
+	background-repeat: no-repeat;
+	background-position: 97%;
+	background-size: 10%;
+
 }
 
 input[type="date"]:before {
@@ -99,6 +213,32 @@ header {
 	border-bottom-right-radius: 50%;
 	border-bottom-left-radius: 50%;
 
+	animation-name: bordaHeaderAni;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+}
+
+header > center {
+
+	font-size: 2em;
+
+}
+
+@keyframes bordaHeaderAni {
+
+	0% {
+		border-bottom-color: rgb(255, 0, 0);
+	}
+
+	50% {
+		border-bottom-color: rgb(255, 255, 0);
+	}
+	100% {
+		border-bottom-color: rgb(255, 255, 255);
+	}
+
 }
 
 /* categorias */
@@ -107,7 +247,7 @@ ul#categoriasUl li {
 
 	display: inline-block;
 
-	font-size: 30px;
+	font-size: 1em;
 
 }
 

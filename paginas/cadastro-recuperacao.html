@@ -14,7 +14,7 @@
 
 	<header>
 		<center>
-			<h1>Cadastro</h1>
+			Cadastro
 		</center>
 	</header>
 
@@ -30,26 +30,27 @@
 
 						<tr>
 							<td>
-								<h2>Informa莽玫es b谩sicas:</h2>
+								<h4>Informa珲es b醩icas:</h4>
 							</td>
 						</tr>
 
 						<tr>
 							<td colspan="2">
-								<input type="text" name="nome" placeholder="Nome"></input>
+								<input type="text" name="nome" placeholder="Nome" required></input>
 							</td>
 						</tr>
 
 						<tr>
 							<td colspan="2">
-								<input type="date" name="dataNascimento" placeholder="Data de Nascimento"></input>
+								<input type="date" name="dataNascimento" placeholder="Nasci." required></input>
 							</td>
 						</tr>
 
 						<tr>		
 							<td colspan="2">		
-								<select name="sexo">
+								<select name="sexo" required>
 
+									<option disabled selected value>--Sexo--</option>
 									<option value="feminino">Feminino</option>
 									<option value="masculino">Masculino</option>
 									<option value="praQue">X</option>
@@ -62,19 +63,19 @@
 								
 						<tr>
 							<td>
-								<h2>Dados login:</h2>
+								<h4>Dados login:</h4>
 							</td>
 						</tr>
 
 						<tr>
 							<td colspan="2">
-								<input type="text" name="nomeUsuario" placeholder="Nome de Usu&aacute;rio"></input>
+								<input type="text" name="nomeUsuario" placeholder="Nome de Usu&aacute;rio" required></input>
 							</td>
 						</tr>
 												
 						<tr>
 							<td colspan="2">
-								<input type="password" name="senha" placeholder="Senha"></input>
+								<input type="password" name="senha" placeholder="Senha" required></input>
 							</td>
 						</tr>
 
@@ -82,25 +83,25 @@
 
 						<tr>
 							<td>
-								<h2>Meios de envio de c贸digo:</h2>
+								<h4>Meios de envio de c骴igo:</h4>
 							</td>
 						</tr>
 												
 						<tr>
 							<td colspan="2">
-								<input type="email" name="email" placeholder="Email"></input>
+								<input type="email" name="email" placeholder="Email" required></input>
 							</td>
 						</tr>
 
 						<tr>
 							<td colspan="2">
-								<input type="tel" name="numeroCelular" placeholder="N&uacute;mero de Celular"></input>
+								<input type="tel" name="numeroCelular" placeholder="N&uacute;mero de Celular" required></input>
 							</td>
 						</tr>
 
 						<tr>
 							<td>
-								<input type="button" name="enviarCodigo" value="Enviar c贸digo"></input>
+								<input type="button" name="enviarCodigo" value="Enviar c骴igo"></input>
 							</td>
 						</tr>
 
@@ -108,18 +109,18 @@
 
 						<tr>
 							<td>
-								<h2>Confirmar:</h2>
+								<h4>Confirmar:</h4>
 							</td>
 						</tr>
 
 						<tr>								
 											
 							<td>
-								<input type="text" name="codigoResgate" placeholder="C贸digo de resgate"></input>
+								<input type="text" name="codigoResgate" placeholder="C骴igo de resgate" required></input>
 							</td>
 
 							<td>
-								<input type="button" name="confirmaCodigo" value="Confirmar c贸digo"></input>
+								<input type="button" name="confirmaCodigo" value="Confirmar c骴igo"></input>
 							</td>
 
 						</tr>

@@ -1,17 +1,14 @@
 
-h2 {
+h4 {
 
 	text-align: center;
 
 }
 
 .linkDiv {
-		
+
+	height: 35%;		
 	position: absolute;
-	top: 34%;
-	left: 1%;
-	right: 1%;
-	bottom: 1%;
 
 }
 

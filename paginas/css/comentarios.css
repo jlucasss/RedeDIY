@@ -14,7 +14,7 @@
 
 textarea {
 
-	width: 93%;
+	width: 90%;
 	height: 69px;
 
 	float: left;
@@ -23,7 +23,7 @@ textarea {
 
 input[type=image] {
 
-	width: 7%;
+	width: 10%;
 
 	height: 69px;
 
@@ -53,7 +53,7 @@ table {
 
 tr td {
 
-	height: 180px;
+	height: 115px; 
 
 }
 
@@ -71,11 +71,14 @@ tr td {
 
 	width: 10%;
 
+	direction: rtl;
+
 }
 
 .respostaTd > img {
 
-	width: 50%;
+	max-width: 30px;
+	width: 100%;
 
 }
 
